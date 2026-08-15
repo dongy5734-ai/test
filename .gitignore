@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.log
+
+# Local runtime data (JSON persistence store)
+server/data.json

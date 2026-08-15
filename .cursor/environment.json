@@ -1,0 +1,20 @@
+{
+  "name": "Task Board",
+  "install": "npm install",
+  "terminals": [
+    {
+      "name": "api",
+      "command": "npm run dev:api",
+      "description": "Express REST API on port 3001 (serves /api/*)."
+    },
+    {
+      "name": "web",
+      "command": "npm run dev:web",
+      "description": "Vite dev server on port 5173 (proxies /api to the API)."
+    }
+  ],
+  "ports": [
+    { "name": "web", "port": 5173 },
+    { "name": "api", "port": 3001 }
+  ]
+}
